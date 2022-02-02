@@ -9,9 +9,9 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/beans/spring-context.xsd">
 
-	<bean name="student1" class="com.springcore.Student">
-		<property name="studentName" value="Suman" />
-		<property name="studentId" value="23234" />
+
+	<bean name="emp1" class="com.springcore.collecions.emp">
+		<property name="name" value="Suman" />
 		<property name="phones">
 			<list>
 
@@ -22,7 +22,7 @@
 
 
 			</list>
-		</property>
+		</property> 
 		<property name="address">
 			<list>
 				<value>Nepal</value>
@@ -33,21 +33,18 @@
 			</list>
 		</property>
 		<property name="courses">
-			<map>
-				<entry key="java" value="2months" />
-				<entry key="python" value="3months" />
-				<entry key="ruby" value="4months" />
-				<entry key="c#" value="1months" />
-
-			</map>
-
+		<map>
+		<entry key="java" value="2months"/>
+		<entry key="python" value="3months"/>
+		<entry key="ruby" value="4months"/>
+		<entry key="c#" value="1months"/>
+		
+		</map>
+		
 		</property>
 
 
 
 	</bean>
-
-
-
 
 </beans>
